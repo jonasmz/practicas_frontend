@@ -1,3 +1,5 @@
+@import url(/css/medias.css);
+
 *,
 *::before,
 *::after{
@@ -11,8 +13,8 @@ body{
     color: #171C26;
 }
 
-nav.container{
-    padding: 0 5px 5px;
+.container{
+    padding: 0 5px;
     display: flex;
     flex-flow: column wrap;
 
@@ -35,9 +37,9 @@ nav.container{
     text-align: center;
 }
 
-/* .menu{
-
-} */
+.menu{
+    display: none;
+}
 
 .menu ul{
     padding: 0 5PX;

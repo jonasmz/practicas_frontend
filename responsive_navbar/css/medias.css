@@ -1,0 +1,27 @@
+@media (min-width: 992px){
+    nav.container {
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    button.navbar-toggle{
+        display: none;
+    }
+
+    div.menu{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    .menu ul{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+    }
+
+    .menu ul li,.menu ul li{
+        margin-left: 5px;
+        padding: 5px;
+    }
+}
