@@ -17,11 +17,22 @@
     .menu ul{
         display: flex;
         flex-flow: row wrap;
-        align-items: center;
+        align-items: stretch;
     }
 
-    .menu ul li,.menu ul li{
-        margin-left: 5px;
-        padding: 5px;
+    .menu ul li, .menu ul li a{
+        display: block;
     }
+
+    .menu ul li{
+        padding: 0 5px;
+        background-color: rgba(23, 28, 38, 0.4);
+    }
+    
+    .menu ul li:hover{
+        background-color: #2E6EA6;
+        border-bottom: 3px solid #F25C05;
+    }
+
+    
 }
