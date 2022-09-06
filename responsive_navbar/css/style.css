@@ -46,11 +46,13 @@ nav.container{
 }
 
 .menu ul a{
+    display: block;
     outline: none;
     text-decoration: none;
     font-weight: bold;
+    color: #F2F2F2;
 }
 
-.menu ul a:link{
-    color: #F2F2F2;
+.menu ul a:hover, .menu ul a:focus{
+    color: #F25C05;
 }
