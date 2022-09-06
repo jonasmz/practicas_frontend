@@ -4,3 +4,19 @@
     box-sizing: border-box;
     margin: 0;
 }
+
+.brand{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 2px 1px;
+}
+
+.navbar-toggle{
+    width:48px;
+    height: 48px;
+}
+
+.brand-content{
+    flex-grow: 1;
+    text-align: center;
+}
