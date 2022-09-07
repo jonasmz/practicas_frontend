@@ -14,17 +14,20 @@ body{
 }
 
 .container{
-    padding: 0 5px;
     display: flex;
     flex-flow: column wrap;
 
+    background-color: transparent;
+}
+
+.brand, .menu{
     background-color: #364A73;
 }
 
 .brand{
     display: flex;
     flex-flow: row wrap;
-    padding: 2px 1px;
+    padding: 2px 0 0 3px;
 }
 
 .navbar-toggle{
@@ -35,10 +38,13 @@ body{
 .brand-content{
     flex-grow: 1;
     text-align: center;
+    padding-top: 1px;
 }
 
 .menu{
     display: none;
+    background-color: rgba(23, 28, 38, 0.95);
+    padding: 10px 5px;
 }
 
 .menu ul{
@@ -47,6 +53,15 @@ body{
 
 }
 
+.menu ul li{
+    padding: 3px 0;
+}
+
+.menu ul li:hover{
+    border-left: 3px solid #F25C05;
+    padding-left: 5px;
+    color: rgba(242, 92, 5, 0.75);
+}
 .menu ul a{
     display: block;
     outline: none;
@@ -55,6 +70,6 @@ body{
     color: #F2F2F2;
 }
 
-.menu ul a:hover, .menu ul a:focus{
+/* .menu ul a:hover, .menu ul a:focus{
     color: #F25C05;
-}
+} */
