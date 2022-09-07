@@ -2,11 +2,11 @@
     nav.container {
         flex-flow: row wrap;
         justify-content: space-between;
-        padding-left: 2px;
+        padding-left: 5px;
 
         background-color: #364A73;
     }
-    
+
     button.navbar-toggle{
         display: none;
     }
