@@ -1,0 +1,29 @@
+/* google font import */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+/* media style import */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    color: #F5F3F4;
+    background: rgba(11, 9, 10, 0.75) url('../assets/img/walpaper.jpg') no-repeat;
+}
+
+#container{
+    min-height: 100vh;
+    background-color: rgba(102, 7, 8, 0.85);
+}
+
+#main-container{
+    min-height: 90vh;
+}
+
+.nav-container ul{
+    padding: 0;
+    list-style: none;
+}
