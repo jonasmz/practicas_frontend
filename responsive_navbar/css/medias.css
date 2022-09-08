@@ -11,11 +11,13 @@
         display: none;
     }
 
-    div.menu{
+    div.menu, div.menu.show{
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
         padding: 0 5px;
+        position: static;
+        width: auto;
 
         background-color: rgba(23, 28, 38, 0.4);
     }
