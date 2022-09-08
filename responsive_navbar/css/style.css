@@ -11,11 +11,16 @@ body{
     font-family: 'Ubuntu', sans-serif;
     background-color: #F2F2F2;
     color: #171C26;
+    background-image: url("../assets/img/scotland.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
 }
 
 .container{
     display: flex;
     flex-flow: column wrap;
+    min-height: 50px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 
     background-color: transparent;
@@ -29,6 +34,7 @@ body{
     display: flex;
     flex-flow: row wrap;
     padding: 2px 0 0 3px;
+    align-items: center;
 }
 
 .navbar-toggle{
@@ -47,6 +53,13 @@ body{
     padding-top: 1px;
 }
 
+.brand-text{
+    color: #F2F2F2;
+    font-weight: 600;
+    font-size: 1.5em;
+    vertical-align: middle;
+}
+
 .menu{
     display: none;
     background-color: rgba(23, 28, 38, 0.95);
@@ -54,6 +67,9 @@ body{
 }
 .menu.show{
     display: block;
+    position: absolute;
+    top: 55px;
+    width: 100vw;
 }
 
 .menu ul{
@@ -79,6 +95,24 @@ body{
     color: #F2F2F2;
 }
 
-/* .menu ul a:hover, .menu ul a:focus{
-    color: #F25C05;
-} */
+.menu ul a i.fa{
+    margin-right: 3px;
+}
+
+.hero-image{
+    min-height: 100vh;
+    color: #F2F2F2;
+}
+
+.hero-image div{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: inherit;
+    background-color: rgba(0,0,0, 0.85);
+}
+
+.hero-image h1{
+    font-size: 2.5vw;
+}

@@ -12,25 +12,35 @@
     <title>Barra de navegacion responsiva con flexbox</title>
 </head>
 <body>
-    <nav class="container">
-        <div class="brand">
-            <button class="navbar-toggle" id="toggle-menu">
-                <i class="fa fa-bars"></i>
-            </button>
-            <div class="brand-content">
-                <img src="https://via.placeholder.com/150x48" alt="brand-image" id="brand-img">
+    <header>
+        <nav class="container">
+            <div class="brand">
+                <button class="navbar-toggle" id="toggle-menu">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div class="brand-content">
+                    <span class="brand-text">JonasMZ</span>
+                </div>
             </div>
-        </div>
-        <div class="menu" id="nav-menu">
-            <ul>
-                <li><a href="#">ITEM 1</a></li>
-                <li><a href="#">ITEM 2</a></li>
-                <li><a href="#">ITEM 3</a></li>
-                <li><a href="#">ITEM 4</a></li>
-                <li><a href="#">ITEM 5</a></li>
-            </ul>
-        </div>
-    </nav>
+            <div class="menu" id="nav-menu">
+                <ul>
+                    <li><a href="#"><i class="fa fa-home"></i><span class="item-text"> HOME</span> </a></li>
+                    <li><a href="#"><i class="fa fa-linkedin-square"></i><span class="item-text"> LinkedIn</span> </a></li>
+                    <li><a href="#"><i class="fa fa-github-square"></i><span class="item-text"> Github</span> </a></li>
+                    <li><a href="#"><i class="fa fa-facebook-square"></i><span class="item-text"> Facebook</span> </a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i><span class="item-text"> Instagram</span> </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <article class="hero-image">
+            <div>
+                <h1>I <i class="fa fa-heart"></i> FrontEnd Design!</h1>
+            </div>
+        </article>
+    </main>
 
     <script src="js/main.js"></script>
 </body>

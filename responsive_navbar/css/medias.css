@@ -35,7 +35,7 @@
     }
     
     nav .menu ul li:hover{
-        background-color: #2E6EA6;
+        /* background-color: #2E6EA6; */
         border: none;
         border-bottom: 3px solid #F25C05;
     }
@@ -43,6 +43,14 @@
         min-height: 100%;
         display: flex;
         align-items: center;
+    }
+
+    div.menu ul li a:hover{
+        color:rgba(255, 152, 50, 0.9);
+    }
+
+    div.menu ul li a span.item-text{
+        display: none;
     }
 
     
