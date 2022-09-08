@@ -16,14 +16,36 @@ body{
 
 #container{
     min-height: 100vh;
-    background-color: rgba(102, 7, 8, 0.85);
+    background-color: rgba(22,26,29, 0.8);
 }
 
 #main-container{
-    min-height: 90vh;
+    min-height: 50vh;
 }
 
+.nav-container{
+    display: flex;
+    background-color: rgba(22,26,29, 0.5);
+    padding: 2px 5px;
+    font-size: 3.5vw;
+}
 .nav-container ul{
+    min-height: 50px;
     padding: 0;
     list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+footer .nav-container ul{
+    min-width: 100%;
+    border-top: 1px solid #A4161A;
+    border-bottom: 1px solid #A4161A;
+}
+
+footer .nav-container ul li{
+    flex-grow: 1;
+    margin: 2px 5px;
+    text-align: center;
 }
