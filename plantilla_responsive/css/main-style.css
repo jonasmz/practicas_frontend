@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    color: var(--secondary-color);
+}
+
+:root{
+    --primary-color: #4A7856;
+    --secondary-color: #70A288;
+    --analogic-color: #6184D8;
+
+    --primary-neutral-color: #202020;
+    --secondary-neutral-color: #f3f3f3;
+
+}
+
+body{
+    background-color: var(--primary-neutral-color);
+}
+
+.container{
+    height: auto;
+    max-width: 1200px;
+    border: 1px solid var(--analogic-color);
+    margin: 0 auto;
+}
+
+.container__flex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 15px 15px;
+    gap: 15px 10px;
+}
+
+.container__flex_item{
+    flex: 0 0 100%;
+    outline: 1px solid var(--secondary-neutral-color);
+    min-height: 50vh;
+}

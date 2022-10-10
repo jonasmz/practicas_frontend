@@ -1,0 +1,120 @@
+:root{
+    /* variable de color principal */
+    --color-principal: #DEDD0E;
+    /* variables para colores neutros */
+    --color-contraste-dark: #4a4440;
+    --color-contraste-dark-alt: #2b2b2b;
+    --color-contraste-light: #F1F2ED;
+}
+
+body{
+    background-color: var(--color-contraste-dark-alt);
+}
+
+.flex-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    max-width: 1400px;
+    margin: 15px auto;
+    gap: 10px 10px;
+}
+
+.flex-container__item{
+    min-height: 300px;
+    flex: 0 0 24%;
+    
+    border-radius: 15px;
+}
+
+.card{
+    position: relative;
+    border: 1px solid var(--color-principal);
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    overflow: hidden;
+    padding-bottom: 25px;
+}
+
+.card__image{
+    position: relative;
+    top: 0;
+    width: 110%;
+    height: 90%;
+}
+
+.card__texts{
+    position: absolute;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    height: 100%;
+    top: 0px;
+    padding: 5px 0px;
+    background-color: rgba(0,0,0,0.75);
+}
+
+.card__text--principal{
+    background-color: rgba(0,0,0,0.75);
+    padding: 5px 15px;
+    font-size: 1.05rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.card__texts h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #DEDD0E;
+    color: rgba(222, 221, 14, 0.9);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.card__texts h2{
+    width: fit-content;
+    margin: 0;
+    padding: 5px 15px;
+    background-color: #DEDD0E;
+    border-radius: 0 5px 5px 0;
+    font-size: 1.15rem;
+    text-transform: uppercase;
+}
+
+.card__texts p{
+    margin: 10px auto;
+    color: rgba(222, 221, 243, 0.9);
+    text-align: center;
+    font-size: 0.85rem;
+    line-height: 1.35rem;
+}
+
+@media (max-width: 960px){
+    .flex-container__item{
+        flex: 0 0 31%;
+    }
+}
+
+@media (max-width: 760px){
+    .flex-container__item{
+        flex: 0 0 48%;
+    }
+
+    .card__image{
+        height: 80%;
+    }
+}
+
+@media (max-width: 476px){
+    .flex-container__item{
+        flex: 0 0 75%;
+    }
+
+    .card__image{
+        width: 100%;
+        height: 85%;
+    }
+}
