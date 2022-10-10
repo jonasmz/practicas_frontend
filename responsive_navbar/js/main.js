@@ -9,3 +9,11 @@ function menuToggle(){
 }
 var menu = document.getElementById('toggle-menu');
 menu.addEventListener('click', menuToggle, false);
+/*si la pantalla tiene mas de 992px remuevo la clase show del elemento menu */
+window.onresize = function () {
+    winWidth = window.innerWidth;
+    if(winWidth >= 992){
+        var menu = document.getElementById('nav-menu');
+        menu.classList.remove('show');
+    }
+}

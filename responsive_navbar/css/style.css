@@ -20,13 +20,14 @@ body{
 .container{
     display: flex;
     flex-flow: column wrap;
-    min-height: 50px;
+    /* min-height: 50px; */
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 
     background-color: transparent;
 }
 
 .brand, .menu{
+    min-height: 50px;
     background-color: #364A73;
 }
 
@@ -38,8 +39,8 @@ body{
 }
 
 .navbar-toggle{
-    width:48px;
-    height: 48px;
+    width:30px;
+    height: 30px;
     margin-top: 1px;
     background-color: #F2F2F2;
     border: 2px solid #2E6EA6;
@@ -68,7 +69,7 @@ body{
 .menu.show{
     display: block;
     position: absolute;
-    top: 55px;
+    top: 52px;
     width: 100vw;
 }
 
@@ -79,6 +80,7 @@ body{
 }
 
 .menu ul li{
+    margin-bottom: 2px;
     padding: 3px 0;
 }
 
@@ -115,4 +117,8 @@ body{
 
 .hero-image h1{
     font-size: 2.5vw;
+}
+
+.red{
+    color: red;
 }
